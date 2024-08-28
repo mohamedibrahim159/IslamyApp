@@ -10,6 +10,9 @@ import 'hadethdetails.dart';
 
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
+
+
+// just test 😂😂
 void main() {
   runApp(ChangeNotifierProvider(
       create: (Context) => appConfigProvider(), child: const MyApplication()));
@@ -30,8 +33,8 @@ class MyApplication extends StatelessWidget {
         "home": (context) => homeScreen(),
         "sebha": (context) => sebhaTap(),
         "suradetails": (context) => suraDetails(),
-        "hadethdetails": (context) => hadethdetails(),
-        "splash": (context) => splashScreen(),
+        "hadethdetails": (context) => const hadethdetails(),
+        "splash": (context) => const splashScreen(),
       },
       theme: ThemeData(),
       themeMode: provider.appTheme,

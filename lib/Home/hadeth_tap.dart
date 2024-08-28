@@ -25,10 +25,10 @@ class _hadethTapState extends State<hadethTap> {
       children: [
         Container(
             alignment: Alignment.center,
-            child: Image(image: AssetImage("assets/images/hadeth_logo.png"))),
-        Divider(
+            child: const Image(image: AssetImage("assets/images/hadeth_logo.png"))),
+        const Divider(
           thickness: 3,
-          color: Color(0xffB7935F),
+          color: const Color(0xffB7935F),
         ),
         Text(
           AppLocalizations.of(context)!.hadeth_name,
@@ -36,7 +36,7 @@ class _hadethTapState extends State<hadethTap> {
         ),
         Divider(
             thickness: 3,
-            color: provider.isDark() ? Color(0xffFACC1D) : Color(0xffB7935F)),
+            color: provider.isDark() ? const Color(0xffFACC1D) : const Color(0xffB7935F)),
         Expanded(
             child: ListView.separated(
                 itemBuilder: (context, index) {
@@ -49,7 +49,7 @@ class _hadethTapState extends State<hadethTap> {
                       child: Text(
                         ahadeth[index].title,
                         textAlign: TextAlign.center,
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontWeight: FontWeight.w400,
                           fontSize: 25,
                         ),
@@ -61,8 +61,8 @@ class _hadethTapState extends State<hadethTap> {
                     endIndent: 40,
                     indent: 40,
                     color: provider.isDark()
-                        ? Color(0xffFACC1D)
-                        : Color(0xffB7935F)),
+                        ? const Color(0xffFACC1D)
+                        : const Color(0xffB7935F)),
                 itemCount: ahadeth.length))
       ],
     );
