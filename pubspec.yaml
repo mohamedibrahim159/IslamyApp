@@ -58,6 +58,10 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
+  fonts:
+    - family: El Messiri
+      fonts:
+        - asset: fonts/ElMessiri-VariableFont_wght.ttf
   generate: true
 
 
