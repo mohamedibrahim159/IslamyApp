@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:islami_app/Home/hadeth_tap.dart';
 import 'package:islami_app/Home/quran_tap.dart';
 import 'package:islami_app/Home/radio_tap.dart';
 import 'package:islami_app/Home/sebha_tap.dart';
 import 'package:islami_app/Setting_tap.dart';
 import 'package:islami_app/themeData.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:provider/provider.dart';
 
 import '../Providers/app_config_provider.dart';
@@ -44,6 +44,7 @@ class _homeScreenState extends State<homeScreen> {
             centerTitle: true,
             title: Text(
               AppLocalizations.of(context)!.app_title,
+              style: Theme.of(context).textTheme.titleLarge,
             ),
             backgroundColor: Colors.transparent,
           ),

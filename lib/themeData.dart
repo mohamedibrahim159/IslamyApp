@@ -11,16 +11,23 @@ class themeData {
       scaffoldBackgroundColor: Colors.transparent,
       appBarTheme: AppBarTheme(
         backgroundColor: Colors.transparent,
-        elevation: 0,
-        centerTitle: true,
-      ),
+          elevation: 0,
+          centerTitle: true,
+          titleTextStyle: TextStyle(fontFamily: 'El Messiri')),
       bottomNavigationBarTheme: BottomNavigationBarThemeData(
         selectedItemColor: blackColor,
         backgroundColor: Color(0xffB7935F),
       ),
       textTheme: TextTheme(
           titleLarge: TextStyle(
-        fontWeight: FontWeight.bold,
-        fontSize: 30,
-      )));
+
+              fontWeight: FontWeight.bold,
+              fontSize: 30,
+              fontFamily: 'El Messiri'
+          ),
+          bodyLarge: TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 30,
+          )
+      ));
 }
