@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:islami_app/languageButtomSheet.dart';
-import 'package:islami_app/theme_buttomSheet.dart';
+import 'package:islami_app/Setting_tap/languageButtomSheet.dart';
+import 'package:islami_app/Setting_tap/theme_buttomSheet.dart';
 import 'package:provider/provider.dart';
 
-import 'Providers/app_config_provider.dart';
+import '../Providers/app_config_provider.dart';
 
 class settingTap extends StatefulWidget {
   const settingTap({super.key});

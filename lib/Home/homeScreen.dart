@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:islami_app/Home/hadeth_tap.dart';
-import 'package:islami_app/Home/quran_tap.dart';
-import 'package:islami_app/Home/radio_tap.dart';
-import 'package:islami_app/Home/sebha_tap.dart';
-import 'package:islami_app/Setting_tap.dart';
+import 'package:islami_app/Hadeth_tap/hadeth_tap.dart';
+import 'package:islami_app/Quran_tap/quran_tap.dart';
+import 'package:islami_app/Radio_tap/radio_tap.dart';
+import 'package:islami_app/Sebha_tap/sebha_tap.dart';
+import 'package:islami_app/Setting_tap/Setting_tap.dart';
 import 'package:islami_app/themeData.dart';
 import 'package:provider/provider.dart';
 
@@ -44,9 +44,13 @@ class _homeScreenState extends State<homeScreen> {
           appBar: AppBar(
             centerTitle: true,
             title: Text(
-              AppLocalizations.of(context)!.app_title,
-              style: Theme.of(context).textTheme.titleLarge,
-            ),
+                AppLocalizations.of(context)!.app_title,
+                style: TextStyle(
+                  fontSize: 35,
+                  fontFamily: 'El Messiri',
+                  color:
+                      provider.isDark() ? Colors.white : themeData.primarylight,
+                )),
             backgroundColor: Colors.transparent,
           ),
           bottomNavigationBar: Theme(
