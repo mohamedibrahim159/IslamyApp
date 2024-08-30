@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:islami_app/Home/hadeth_tap.dart';
+import 'package:islami_app/Hadeth_tap/hadeth_tap.dart';
 import 'package:islami_app/Providers/app_config_provider.dart';
 import 'package:provider/provider.dart';
 
@@ -28,26 +28,36 @@ class hadethdetails extends StatelessWidget {
         Scaffold(
             backgroundColor: Colors.transparent,
             appBar: AppBar(
+              iconTheme: IconThemeData(
+                  color: provider.isDark() ? Colors.white : Colors.black),
               centerTitle: true,
-              title: Text(
-                "${model.title}",
-                style: Theme.of(context).textTheme.titleLarge,
-              ),
+              title: Text("${model.title}",
+                  style: TextStyle(
+                      fontSize: 35,
+                      fontFamily: 'El Messiri',
+                      color: provider.isDark() ? Colors.white : Colors.black)),
               backgroundColor: Colors.transparent,
             ),
             body: Container(
               margin: EdgeInsets.symmetric(
-                horizontal: 40,
-                vertical: 75,
+                horizontal: MediaQuery.of(context).size.width * 0.06,
+                vertical: MediaQuery.of(context).size.height * 0.07,
               ),
               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(25),
-                  color: provider.isDark()
-                      ? Color(0xffFACC1D)
-                      : Color(0xffB7935F)),
+                borderRadius: BorderRadius.circular(25),
+                color: provider.isDark() ? Color(0xff141A2E) : Colors.white,
+              ),
               child: ListView.builder(
                 itemBuilder: (context, index) {
-                  return Text("${model.content[index]}");
+                  return Text(
+                    "${model.content[index]}",
+                    style: TextStyle(
+                      fontSize: 25,
+                      fontFamily: 'El Messiri',
+                      color:
+                          provider.isDark() ? Color(0xffB7935F) : Colors.black,
+                    ),
+                  );
                 },
                 itemCount: model.content.length,
               ),

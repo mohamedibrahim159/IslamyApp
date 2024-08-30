@@ -28,11 +28,15 @@ class _hadethTapState extends State<hadethTap> {
             child: const Image(image: AssetImage("assets/images/hadeth_logo.png"))),
         const Divider(
           thickness: 3,
-          color: const Color(0xffB7935F),
+          color: Color(0xffB7935F),
         ),
         Text(
           AppLocalizations.of(context)!.hadeth_name,
-          style: Theme.of(context).textTheme.titleLarge,
+          style: TextStyle(
+            fontSize: 35,
+            fontFamily: 'El Messiri',
+            color: provider.isDark() ? Colors.white : Colors.black,
+          ),
         ),
         Divider(
             thickness: 3,
@@ -47,13 +51,14 @@ class _hadethTapState extends State<hadethTap> {
                             arguments: ahadeth[index]);
                       },
                       child: Text(
-                        ahadeth[index].title,
-                        textAlign: TextAlign.center,
-                        style: const TextStyle(
-                          fontWeight: FontWeight.w400,
-                          fontSize: 25,
-                        ),
-                      ),
+                          ahadeth[index].title,
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontSize: 35,
+                            fontFamily: 'El Messiri',
+                            color:
+                                provider.isDark() ? Colors.white : Colors.black,
+                          )),
                     );
                   });
                 },

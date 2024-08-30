@@ -140,8 +140,9 @@ class quranTap extends StatelessWidget {
         ),
         Text(AppLocalizations.of(context)!.sura_name,
             style: TextStyle(
-              fontWeight: FontWeight.w400,
-              fontSize: 25,
+              fontSize: 35,
+              fontFamily: 'El Messiri',
+              color: provider.isDark() ? Colors.white : Colors.black,
             )),
         Divider(
           thickness: 3,
@@ -159,11 +160,12 @@ class quranTap extends StatelessWidget {
                     child: Text(
                       suraNames[index],
                       textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontWeight: FontWeight.w400,
-                        fontSize: 25,
-                      ),
-                    ),
+                        style: TextStyle(
+                          fontSize: 35,
+                          fontFamily: 'El Messiri',
+                          color:
+                              provider.isDark() ? Colors.white : Colors.black,
+                        )),
                   );
                 },
                 separatorBuilder: (context, index) => Divider(

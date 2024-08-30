@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:islami_app/themeData.dart';
 
 class radioTap extends StatelessWidget {
   const radioTap({super.key});
