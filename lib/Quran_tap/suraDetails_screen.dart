@@ -41,7 +41,10 @@ class _suraDetailsState extends State<suraDetails> {
                   color: provider.isDark() ? Colors.white : Colors.black),
               centerTitle: true,
               title: Text("${args.name}",
-                  style: TextStyle(fontSize: 35, fontFamily: 'El Messiri')),
+                  style: TextStyle(
+                      fontSize: 35,
+                      fontFamily: 'El Messiri',
+                      color: provider.isDark() ? Colors.white : Colors.black)),
               backgroundColor: Colors.transparent,
             ),
             body: Container(

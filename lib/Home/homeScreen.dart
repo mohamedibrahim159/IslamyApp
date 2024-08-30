@@ -48,8 +48,7 @@ class _homeScreenState extends State<homeScreen> {
                 style: TextStyle(
                   fontSize: 35,
                   fontFamily: 'El Messiri',
-                  color:
-                      provider.isDark() ? Colors.white : themeData.primarylight,
+                  color: provider.isDark() ? Colors.white : Colors.black,
                 )),
             backgroundColor: Colors.transparent,
           ),
