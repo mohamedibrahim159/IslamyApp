@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:islami_app/Providers/app_config_provider.dart';
-import 'package:islami_app/themeData.dart';
+import 'package:islami_app/Theme_of_application/themeData.dart';
 import 'package:provider/provider.dart';
 
 class quranTap extends StatelessWidget {

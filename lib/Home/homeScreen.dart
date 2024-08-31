@@ -5,7 +5,7 @@ import 'package:islami_app/Quran_tap/quran_tap.dart';
 import 'package:islami_app/Radio_tap/radio_tap.dart';
 import 'package:islami_app/Sebha_tap/sebha_tap.dart';
 import 'package:islami_app/Setting_tap/Setting_tap.dart';
-import 'package:islami_app/themeData.dart';
+import 'package:islami_app/Theme_of_application/themeData.dart';
 import 'package:provider/provider.dart';
 
 import '../Providers/app_config_provider.dart';
